@@ -34,7 +34,7 @@
 <body>
     <h1>M.Gabriel é gay?</h1>
     <p>clique na resposta...</p>
-    <div id="nao" onclick="clicou()" onmouseout="saiu()"> não
+    <div id="nao" onclick="clicou()" onmouseenter="entrou()"> não
     </div>
     <br>
     <a href="https://www.youtube.com/watch?v=d7BpBAL2ztc&ab_channel=Lonnxx">
@@ -47,10 +47,13 @@
     <script>
         function clicou() {
             var c = document.querySelector('div#nao')
-            c.style.margin = 'auto'
-            c.innerHTML = 'Errou...tente novamente'
-            c.style.width = '350px'
+           // c.innerHTML = 'Errou...tente novamente'
+            c.style.background = 'white'
         }
+       function entrou() {
+        var e = document.querySelector ('div#nao')
+        e.style.margin = 'auto'
+       }
     </script>
 </body>
 </html>
