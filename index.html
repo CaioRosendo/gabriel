@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-            div#sim {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2em;
-            background-color: green;
-            color: white;
-            width: 100px;
-            height: 100px;
-            line-height: 100px;
-            text-align: center;
-        }
-        div#nao {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2em;
-            background-color: green;
-            color: white;
-            width: 100px;
-            height: 100px;
-            line-height: 100px;
-            text-align: center;
-        }
+            body {
+                font-family: cursive;
+                background-color: pink;
+                color: white;
+            }
+            h1{
+                background-image: linear-gradient(to right, white, pink);
+                color: red;
+            }
+            div {
+                border-radius: 10px;
+                font-size: 2em;
+                background-color: rgba(255, 0, 0, 0.355);
+                color: white;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+            }
 
         a {
             text-decoration: none;
@@ -34,11 +33,11 @@
 <body>
     <h1>M.Gabriel é gay?</h1>
     <p>clique na resposta...</p>
-    <div id="nao" onclick="clicou()" onmouseenter="entrou()"> não
+    <div id="nao" onclick="clicou()" onmouseenter="entrou()">Não
     </div>
     <br>
     <a href="https://www.youtube.com/watch?v=d7BpBAL2ztc&ab_channel=Lonnxx">
-        <div id="sim">sim
+        <div id="sim">Sim
         
         </div>
     </a>
@@ -48,7 +47,8 @@
         function clicou() {
             var c = document.querySelector('div#nao')
            // c.innerHTML = 'Errou...tente novamente'
-            c.style.background = 'white'
+            c.style.background = 'pink'
+            c.style.color = 'pink'
         }
        function entrou() {
         var e = document.querySelector ('div#nao')
