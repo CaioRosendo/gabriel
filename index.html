@@ -25,23 +25,30 @@
                 text-align: center;
             }
 
+            section{ 
+                display: none;
+            }
+
         a {
             text-decoration: none;
         }
+
     </style>
 </head>
 <body>
-    <h1>M.Gabriel é gay?</h1>
+    <h1>W.Arcanjo é gay?</h1>
     <p>clique na resposta...</p>
     <div id="nao" onclick="clicou()" onmouseenter="entrou()">Não
     </div>
     <br>
-    <a href="https://www.youtube.com/watch?v=d7BpBAL2ztc&ab_channel=Lonnxx">
-        <div id="sim">Sim
-        
-        </div>
-    </a>
-
+    
+    <div  onclick="sim()">Sim
+    </div>
+    <br>
+    
+    <section id="sim">
+        <video controls src="Arcanjo.mp4"> Arcanjo Dançando</video>
+    </section>
 
     <script>
         function clicou() {
@@ -53,6 +60,11 @@
        function entrou() {
         var e = document.querySelector ('div#nao')
         e.style.margin = 'auto'
+       }
+
+       function sim() {
+        var s = document.querySelector ('section#sim')
+        s.style.display = 'block'
        }
     </script>
 </body>
